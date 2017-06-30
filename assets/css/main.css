@@ -1,1 +1,129 @@
 /* custom styles */
+html, body {
+	width: 100%;
+	height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+    letter-spacing: 1px;
+    margin: 0;
+    background: linear-gradient(96deg, #e81eed, #f093ea, #27e9e7, #95edec);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 24s ease infinite;
+    -moz-animation: AnimationName 24s ease infinite;
+    -o-animation: AnimationName 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+  }
+    @-webkit-keyframes AnimationName {
+        0%{background-position:65% 0%}
+        50%{background-position:36% 100%}
+        100%{background-position:65% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:65% 0%}
+        50%{background-position:36% 100%}
+        100%{background-position:65% 0%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:65% 0%}
+        50%{background-position:36% 100%}
+        100%{background-position:65% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:65% 0%}
+        50%{background-position:36% 100%}
+        100%{background-position:65% 0%}
+    }
+
+    /*background: linear-gradient(60deg, #e81eed, #f093ea, #27e9e7, #95edec);*/
+
+#page-wrapper {
+  margin: auto;
+}
+header {
+  /*border: 1px dashed rgba(255,255, 255, 0.5);*/
+  margin: 70px auto 0 auto ;
+  /*background-color: rgba(255, 255, 255, 0.5*/
+  width: auto;
+}
+nav {
+  color: black;
+  width: auto;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+
+}
+main {
+  width: auto;
+  padding: 1em;
+  margin: auto;
+  background-color: rgba(255, 255,255, 0.5);
+}
+/*div {
+  float: left;
+}*/
+#col1{
+  float: left;
+  width: 33%;
+  height: auto;
+}
+#col2{
+float: left;
+  width: 33%;
+  height: auto;
+}
+#col3{
+  float: left;
+  width: 33%;
+  height: auto;
+}
+
+h1 {
+	color: rgba(73, 76, 78, 0.7);
+  font-family: 'Zilla Slab', serif;
+	font-size: 60px;
+	margin: auto;
+  text-align: center;
+  text-shadow: 5px 5px rgba(148, 90, 167, 0.22);
+}
+
+
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+    padding: 5px;
+}
+p::-moz-selection {
+    color: red;
+  }
+p::-webkit-selection {
+    color: red;
+  }
+
+
+p {
+  margin-top: 10px;
+  font-family: 'Trocchi', serif;
+  line-height: 30px;
+  letter-spacing: normal;
+  font-size: 14px;
+  }
+
+
+a {
+	text-decoration: none;
+
+}
+a:hover {
+	border-bottom: 1px solid white;
+}
+
+img {
+	margin: 40px 8px;
+}
