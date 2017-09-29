@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>My Portfolio</title>
+  <title>Portfolio of Joanne Cabling</title>
   <!-- meta -->
   <meta charset="utf-8" />
   <meta name="description" content="Personal Site">
@@ -9,44 +9,137 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- styles -->
 
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Trocchi|Zilla+Slab" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  <!-- scripts -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
+<!--Custom Javascript -->
+<script src="assets/app.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:300i,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/scss/main.css">
+<link rel="stylesheet" type="text/css" href="assets/css/gradient.css">
+
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon-blossom.png">
   </head>
   <body>
-    <div id="page-wrapper">
-      <header>
-        <h1>Portfolio of Joanne Cabling</h1>
-          <nav>
-              <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">Graphic Design</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </nav>
-      </header>
-      <main>
-        <div id="col1">
-          <h2>About</h2>
-          <p>Vegan paleo hell of ut fingerstache cloud bread, intelligentsia YOLO stumptown eiusmod. Disrupt church-key green juice, poutine ennui tumeric succulents activated charcoal. Lomo cornhole irony sint, thundercats ramps est beard gastropub. Culpa meggings venmo gentrify in activated charcoal cillum pitchfork offal hoodie artisan edison bulb. </p>
+    <!-- NAVIGATION -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li>
+              <a href="#my-work">MY WORK</a>
+            </li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <div class="section no-pad-bot gradient center valign-wrapper main-header margin-bottom" id="page-wrap">
+      <div class="container header col s12 ">
+        <h1 class="center-align ">Hi there! I’m <span class="my-name">Joanne Cabling</span>.<br />
+            I’m a full-stack web developer.
+        </h1>
+        <br /><br />
+        <a href="#my-work" class="waves-effect waves-light btn-large">View my Work</a>
       </div>
-      <div id="col2">
-          <h2>Web Development</h2>
-          <p>Vegan paleo hell of ut fingerstache cloud bread, intelligentsia YOLO stumptown eiusmod. Disrupt church-key green juice, poutine ennui tumeric succulents activated charcoal. Lomo cornhole irony sint, thundercats ramps est beard gastropub. Culpa meggings venmo gentrify in activated charcoal cillum pitchfork offal hoodie artisan edison bulb. </p>
-      </div>
-      <div id="col3">
-        <h2>Graphic Design</h2>
-        <p>Vegan paleo hell of ut fingerstache cloud bread, intelligentsia YOLO stumptown eiusmod. Disrupt church-key green juice, poutine ennui tumeric succulents activated charcoal. Lomo cornhole irony sint, thundercats ramps est beard gastropub. Culpa meggings venmo gentrify in activated charcoal cillum pitchfork offal hoodie artisan edison bulb. </p>
-      </div>
-      </main>
     </div>
-  </body>
+    <!-- About section-->
+    <div class="container margin-bottom" >
+      <div class="row">
+      <h2 class="center" id="about">ABOUT ME</h2>
+        <div class="col s4 center-align">
+          <img src="assets/imgs/Joanne2web.jpg" class="responsive-img circle "/>
+        </div>
+        <div class="col s8">
+          <p class="flow-text">I’m a full-stack web developer from the San Francisco Bay Area. I have a background in graphic design. I have always been creative and had an affinity for the web and how it works. I taught myself HTML back in the days of Netscape Navigator, Yahoo Geocities and AOL.
+            After graduating from college, I went on to become a graphic designer for more than 9 years.
+            While I enjoy graphic design, I felt like there was something missing. I wanted to create products with more interaction with the audience. So I decided to transition into web development.
+          </p>
+        </div>
+      </div>
+    </div>
+        <!-- My WORK -->
+      <div class="container margin-bottom" id="my-work">
+        <div class="row">
+          <h2 class="center">MY WORK</h2>
+            <div class="col s4">
+              <div class="card sticky-action hoverable">
+                <div class="card-image">
+                  <img src="assets/imgs/waywayfar.jpg" class="materialboxed responsive-img">
+                  <span class="card-title">WayWayFar</span>
+                </div>
+                <div class="card-content">
+                  <p class="flow-text">Explore your next vacation destination. See what was said about a city and what hotspots to visit. Built with React and Node.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a href="https://waywayfar.herokuapp.com/" target="_blank">Link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="card sticky-action hoverable">
+                <div class="card-image">
+                  <img src="assets/imgs/ponder.png" class="materialboxed responsive-img">
+                  <span class="card-title">Ponder</span>
+                </div>
+                <div class="card-content">
+                  <p class="flow-text">A micro blogging platform without the click bait. Express your thoughts in 1000 characters or less. Built with Ruby on Rails.
+                </p>
+                </div>
+                <div class="card-action">
+                <a href="http://ponder.ca/" target="_blank">Link</a>
+                </div>
+              </div>
+            </div>
+        <div class="col s4">
+          <div class="card sticky-action hoverable">
+              <div class="card-image" >
+                <img src="assets/imgs/waywayfar.jpg" class="materialboxed responsive-img">
+                <span class="card-title">Let's Go, Kiddo!</span>
+              </div>
+              <div class="card-content">
+                <p class="flow-text">Looking for something to do with the kids? Choose your city and view what places are kid friendly. Built with Ruby on Rails. </p>
+              </div>
+              <div class="card-action">
+                <a href="https://lets-go-kiddo.herokuapp.com/" target="_blank">Link</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-bottom pad-bottom">
+      <h2 class="center" id="contact">CONTACT ME</h2>
+      <p class="center flow-text">
+
+      </p>
+      <div class="row">
+        <div class="col s4">
+        </div>
+        <div class="col s4">
+
+        <p class="flow-text valign-wrapper">
+          <a href="https://www.linkedin.com/in/joanne-cabling/" target="_blank"><img src="assets/imgs/In-2C-66px-R.png" /></a>Connect on LinkedIn
+        </p>
+
+        <p class="flow-text valign-wrapper">
+          <a href="https://github.com/jojobeth1" target="_blank"><img src="assets/imgs/GitHub-Mark-120px-plus copy.png" /></a> &nbsp; Find me on Github
+        </p>
+
+
+        </div>
+        <div class="col s3">
+
+        </div>
+
+      </div>
+    </div>
+
+</body>
 </html>
