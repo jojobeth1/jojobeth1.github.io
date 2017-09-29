@@ -1,6 +1,18 @@
 .main-header {
   font-weight: normal;
-  height: 500px; }
+  height: 800px; }
+
+.margin-bottom {
+  margin-bottom: 150px !important; }
+
+.pad-bottom {
+  padding-bottom: 50px !important; }
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 5; }
 
 .my-name {
   font-family: 'Raleway', sans-serif; }
