@@ -19,8 +19,9 @@
 
 
   .card-title {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 32px;
+    font-weight: 500;
+    @extend .white-text;
     &.activator {
       cursor: pointer;
     }
